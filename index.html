@@ -8,39 +8,79 @@
 			src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.js"
 			integrity="sha384-oeUn82QNXPuVkGCkcrInrS1twIxKhkZiFfr2TdiuObZ3n3yIeMiqcRzkIcguaof1"
 			crossorigin="anonymous"></script>
-		<link
-			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-			rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 		<link href="styles/style.css" rel="stylesheet" />
-		<script src="app.js" defer></script>
+		<script src="script.js" defer></script>
 	</head>
-	<body class="overflow-hidden">
-		<main id="main-container" class="w-screen">
+	<body>
+		<main id="main-container" class="overflow-hidden">
 			<!-- CONTAINER FOR HERO AND JS ITEMS -->
-			<div class="flex flex-col items-center gap-[10vw]">
-				<h1 class="" id="pokemon-title">Pokémon</h1>
-				<h2 class="text-7xl" id="pokemon-title-small">Gotta catch 'em all</h2>
-				<div id="pokemonContainer" class="">
-					<img
-						id="pokemonImage"
-						src="/public/PICTURES/pokeball.png"
-						alt="Pokemon"
-						class="w-[300px] h-[300px] transition duration-500 ease-in-out scale-100" />
+			<div class="flex flex-col items-center gap-20 z-50 m-2">
+				<!-- 	<h1 class="z-50" id="pokemon-title">Pokémon</h1>
+				<h2 class="text-7xl z-50" id="pokemon-title-small">
+					Gotta catch 'em all
+				</h2> -->
+				<div id="title-container" class="flex flex-col w-screen items-center">
+					<h1 class="z-50 text-9xl" id="pokemon-title">Pokémon</h1>
+				</div>
+				<div
+					id="js-content"
+					class="z-50 w-full h-full flex flex-col gap-5 items-center">
+					<div id="search" class="w-full flex flex-row gap-3 justify-center">
+						<input
+							type="search"
+							placeholder="ID or Pokemon's name"
+							id="search-input"
+							class="w-1/6 rounded-2xl"
+							required />
+						<button type="submit" id="search-btn" class="rounded-2xl">
+							Search
+						</button>
+						<button type="submit" id="random-btn" class="rounded-2xl">
+							Random Pokemon
+						</button>
+					</div>
+					<div id="pokemon-container" class="flex flex-row width-screen gap-10">
+						<img
+							id="pokemonImage"
+							src="/public/PICTURES/egg.png"
+							alt="Pokemon"
+							class="" />
+						<div id="pokemon-info" class="hidden">
+							<h2 class="hidden" id="pokemon-name"></h2>
+						</div>
+					</div>
+					<div id="bottom-rotate" class="flex flex-col justify-center top-0">
+						<button class="invisible rounded-2xl" id="rotate-btn">
+							Rotate Pokemon
+						</button>
+						<!-- <img
+							id="img-catch"
+							src="public/PICTURES/title-catch.png"
+							class="visible" /> -->
+					</div>
 				</div>
 			</div>
 			<!--END OF CONTAINER FOR HERO AND JS ITEMS -->
 			<!-- CONTAINER FOR BACKGROUND POKEBALLS -->
 
 			<div
-				id="bottom-pokeballs"
-				class="overflow-hidden w-screen h-screen z-0 relative">
-				<div
-					class="pokeball bg-contain bg-right bg-no-repeat h-1/6 w-1/6 right-8 rotate-45 absolute"
-					id="poke-small"></div>
-				<div
-					class="pokeball bg-contain bg-no-repeat w-5/6 h-5/6 top-30 -left-40 absolute rotate-45"
-					id="poke-big"></div>
+				class="absolute bottom-0 left-0 w-screen h-screen pointer-events-none -z-10 opacity-40 overflow-hidden">
+				<img
+					src="/public/PICTURES/pokeball.png"
+					alt="smallest pokeball"
+					class="absolute top-0 -left-10 w-28 h-28 rotate-45" />
+				<img
+					src="/public/PICTURES/pokeball.png"
+					alt="small pokeball"
+					class="absolute bottom-4 right-8 w-48 h-48 -rotate-45" />
+				<img
+					src="/public/PICTURES/pokeball.png"
+					alt="big pokeball"
+					class="absolute -bottom-60 -left-40 w-2/5 rotate-6" />
 			</div>
+
+			<!-- </div> -->
 			<!--END OF CONTAINER FOR BACKGROUND POKEBALLS -->
 		</main>
 	</body>

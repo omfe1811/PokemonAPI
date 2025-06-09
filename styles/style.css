@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 	color-scheme: light dark;
@@ -14,11 +16,10 @@
 
 body {
 	margin: 0;
-	background-color: rgb(255, 253, 239);
+	background-color: rgb(214, 252, 255);
 }
 /* BUTTONS STYLING, SEARCH AND ROTATE */
 button {
-	border-radius: 10px;
 	border: 1px solid transparent;
 	padding: 0.6em 1.2em;
 	font-size: 1em;
@@ -33,27 +34,24 @@ button:hover {
 	border-color: var(--yellow-intense);
 	background-color: var(--black-red-hue);
 }
-button:focus,
-button:focus-visible {
-	outline: 4px auto -webkit-focus-ring-color;
+input {
+	background-color: var(--yellow-intense);
+	color: var(--black-red-hue);
+	text-align: center;
+}
+.pokemon-title-small {
+	font-family: "Pokemon-smaller", sans-serif;
+	color: var(--red-intense);
+	font-size: 2rem;
 }
 
-#pokemon-title-small {
-	font-family: "Pokemon-smaller", sans-serif;
-	-webkit-text-stroke: 3px #3466af;
-	text-shadow: -4px 4px 0px #1d2c5e;
-}
-.pokeball {
-	background-image: var(--pokeball);
-}
 #pokemon-title {
 	font-family: "Pokemon-solid", sans-serif !important;
-	color: rgb(255, 255, 255); /* make it obvious */
-	font-size: 15rem;
+	font-size: 10rem;
 	color: #ffcb05;
 	text-shadow: -18px 15px 0px #1d2c5e;
 	letter-spacing: 0.1cap;
-	-webkit-text-stroke: 16px #3466af;
+	-webkit-text-stroke: 8px #3466af;
 }
 
 /* 								FONTS 					*/
