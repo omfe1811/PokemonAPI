@@ -1,0 +1,80 @@
+:root {
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	color-scheme: light dark;
+	--yellow-intense: #ffcb05ff;
+	--black-red-hue: #221e1fff;
+	--red-intense: #ba1f2dff;
+	--blue-dark: #1d2c5eff;
+	--pokeball: url("/public/PICTURES/pokeball.png");
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	margin: 0;
+	background-color: rgb(255, 253, 239);
+}
+/* BUTTONS STYLING, SEARCH AND ROTATE */
+button {
+	border-radius: 10px;
+	border: 1px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	background-color: var(--blue-dark);
+	color: var(--yellow-intense);
+	cursor: pointer;
+	transition: border-color 0.25s;
+}
+button:hover {
+	border-color: var(--yellow-intense);
+	background-color: var(--black-red-hue);
+}
+button:focus,
+button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+}
+
+#pokemon-title-small {
+	font-family: "Pokemon-smaller", sans-serif;
+	-webkit-text-stroke: 3px #3466af;
+	text-shadow: -4px 4px 0px #1d2c5e;
+}
+.pokeball {
+	background-image: var(--pokeball);
+}
+#pokemon-title {
+	font-family: "Pokemon-solid", sans-serif !important;
+	color: rgb(255, 255, 255); /* make it obvious */
+	font-size: 15rem;
+	color: #ffcb05;
+	text-shadow: -18px 15px 0px #1d2c5e;
+	letter-spacing: 0.1cap;
+	-webkit-text-stroke: 16px #3466af;
+}
+
+/* 								FONTS 					*/
+@font-face {
+	font-family: "Pokemon-hollow";
+	src: url("/public/FONTS/Pokemon-hollow.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Pokemon-solid";
+	src: url("/public/FONTS/Pokemon Solid.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Pokemon-smaller";
+	src: url("/public/FONTS/Futura Condensed Extra Bold.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
