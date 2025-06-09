@@ -84,11 +84,8 @@ const rotatePokemonButton = () => {
 const renderPage = () => {
 	if (pokemon) {
 		displayPokemon();
-
 		if (!nameHeader) {
-			nameHeader = document.createElement("h2");
-			nameHeader.id = "pokemonName";
-			nameHeader.className = "pokemon-title-small";
+			nameHeader = document.querySelector("#pokemon-name");
 			pokemonInfo.appendChild(nameHeader);
 		}
 		nameHeader.textContent = pokemon.name.toUpperCase();
