@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ["./index.html", "./app.js"],
+	content: ["./index.html", "./script.js"],
 	theme: {
 		extend: {
+			fontSize: {
+				"15xl": "15rem",
+			},
 			colors: {
 				moonstone: {
 					DEFAULT: "#559cad",
