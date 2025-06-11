@@ -7,6 +7,9 @@
 	--black-red-hue: #221e1fff;
 	--red-intense: #ba1f2dff;
 	--blue-dark: #1d2c5eff;
+	--blue-darkest: rgb(0, 3, 52);
+	--pink-light: #ffcbdd;
+	--light-green: #b0ff92;
 	--pokeball: url("/public/PICTURES/pokeball.png");
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -31,8 +34,8 @@ button {
 	transition: border-color 0.25s;
 }
 button:hover {
-	border-color: var(--yellow-intense);
-	background-color: var(--black-red-hue);
+	border-color: var(--blue-dark);
+	background-color: var(--blue-darkest);
 }
 input {
 	background-color: var(--yellow-intense);
@@ -41,10 +44,18 @@ input {
 }
 .pokemon-title-small {
 	font-family: "Pokemon-smaller", sans-serif;
-	color: var(--red-intense);
-	font-size: 2rem;
+	color: var(--blue-dark);
+	font-size: 3rem;
 }
-
+.bg-image {
+	background-color: rgba(255, 253, 189, 0.81);
+}
+.bg-violet {
+	background-color: rgb(214, 252, 255);
+}
+.bg-green {
+	background-color: #ffcb05;
+}
 #pokemon-title {
 	font-family: "Pokemon-solid", sans-serif !important;
 	font-size: 10rem;

@@ -11,7 +11,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 		<link href="styles/style.css" rel="stylesheet" />
 		<script src="script.js" defer></script>
-		<base href="/repo-name/" />
+		<!-- <base href="/repo-name/" /> -->
 	</head>
 	<body>
 		<main id="main-container" class="overflow-hidden">
@@ -37,24 +37,62 @@
 						<button type="submit" id="search-btn" class="rounded-2xl">
 							Search
 						</button>
-						<button type="submit" id="random-btn" class="rounded-2xl">
+						<button
+							type="submit"
+							id="random-btn"
+							class="rounded-2xl px-4 py-2 bg-yellow-400 text-white flex items-center gap-2 hover:bg-yellow-500">
 							Random Pokemon
+							<span id="dice-icon" class="w-6 h-6"></span>
 						</button>
 					</div>
-					<div id="pokemon-container" class="flex flex-row width-screen gap-10">
-						<img
-							id="pokemonImage"
-							src="/public/PICTURES/egg.png"
-							alt="Pokemon"
-							class="" />
+					<div
+						id="pokemon-container"
+						class="flex flex-row gap-10 bg-transparent border-none border-y-amber-200 border-4 rounded-2xl p-7">
+						<div
+							id="image-container"
+							class="bg-transparent rounded-4xl w-fit h-fit">
+							<img
+								id="pokemonImage"
+								src="/public/PICTURES/egg.png"
+								alt="Pokemon"
+								class="" />
+						</div>
 						<div id="pokemon-info" class="hidden">
 							<h2 class="pokemon-title-small" id="pokemon-name"></h2>
+							<ul
+								class="w-72 text-sm font-medium text-indigo-950 bg-violet border border-yellow-50 rounded-3xl">
+								<li
+									class="w-full px-4 py-2 border-b border-b-emerald-600"
+									id="id">
+									Messages
+								</li>
+								<li
+									class="w-full px-4 py-2 border-b border-b-emerald-600 rounded-t-lg"
+									id="weight"></li>
+								<li
+									class="w-full px-4 py-2 border-b border-b-emerald-600"
+									id="height">
+									Settings
+								</li>
+
+								<li class="w-full px-4 py-2 rounded-b-lg" id="experience">
+									Download
+								</li>
+							</ul>
 						</div>
 					</div>
 					<div id="bottom-rotate" class="flex flex-col justify-center top-0">
 						<button class="invisible rounded-2xl" id="rotate-btn">
-							Rotate Pokemon
+							Rotate
 						</button>
+						<button class="invisible rounded-2xl" id="shiny-btn">Shiny</button>
+						<button class="invisible rounded-2xl" id="previous-btn">
+							Previous Pokemon
+						</button>
+						<button class="invisible rounded-2xl" id="next-btn">
+							Next Pokemon
+						</button>
+
 						<!-- <img
 							id="img-catch"
 							src="public/PICTURES/title-catch.png"

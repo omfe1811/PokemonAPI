@@ -7,6 +7,9 @@ export default {
 				"15xl": "15rem",
 			},
 			colors: {
+				turquise: {
+					DEFAULT: "#31A5A5",
+				},
 				moonstone: {
 					DEFAULT: "#559cad",
 					100: "#111f23",
