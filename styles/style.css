@@ -38,7 +38,7 @@ button:hover {
 	background-color: var(--blue-darkest);
 }
 input {
-	background-color: var(--yellow-intense);
+	background-color: rgba(255, 253, 189, 0.81);
 	color: var(--black-red-hue);
 	text-align: center;
 }
@@ -51,7 +51,7 @@ input {
 	background-color: rgba(255, 253, 189, 0.81);
 }
 .bg-violet {
-	background-color: rgb(214, 252, 255);
+	background-color: rgb(214, 241, 255);
 }
 .bg-green {
 	background-color: #ffcb05;
@@ -68,21 +68,21 @@ input {
 /* 								FONTS 					*/
 @font-face {
 	font-family: "Pokemon-hollow";
-	src: url("/public/FONTS/Pokemon-hollow.ttf") format("truetype");
+	src: url("/FONTS/Pokemon-hollow.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face {
 	font-family: "Pokemon-solid";
-	src: url("/public/FONTS/Pokemon Solid.ttf") format("truetype");
+	src: url("/FONTS/Pokemon Solid.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face {
 	font-family: "Pokemon-smaller";
-	src: url("/public/FONTS/Futura Condensed Extra Bold.otf") format("truetype");
+	src: url("/FONTS/Futura Condensed Extra Bold.otf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Pokemon</title>
+		<title>OLGA Pokemon</title>
 		<script
 			src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.js"
 			integrity="sha384-oeUn82QNXPuVkGCkcrInrS1twIxKhkZiFfr2TdiuObZ3n3yIeMiqcRzkIcguaof1"
@@ -47,18 +47,22 @@
 					</div>
 					<div
 						id="pokemon-container"
-						class="flex flex-row gap-10 bg-transparent border-none border-y-amber-200 border-4 rounded-2xl p-7">
+						class="flex flex-row gap-10 bg-transparent border-none border-y-amber-200 border-4 rounded-2xl p-7 items-center">
 						<div
-							id="image-container"
-							class="bg-transparent rounded-4xl w-fit h-fit">
-							<img
-								id="pokemonImage"
-								src="/public/PICTURES/egg.png"
-								alt="Pokemon"
-								class="" />
+							id="pokemon-picture-name-container"
+							class="flex flex-col justify-center items-center">
+							<div
+								id="image-container"
+								class="bg-transparent rounded-4xl w-fit h-fit">
+								<img
+									id="pokemonImage"
+									src="/PICTURES/egg.png"
+									alt="Pokemon"
+									class="" />
+							</div>
+							<h2 class="pokemon-title-small" id="pokemon-name"></h2>
 						</div>
 						<div id="pokemon-info" class="hidden">
-							<h2 class="pokemon-title-small" id="pokemon-name"></h2>
 							<ul
 								class="w-72 text-sm font-medium text-indigo-950 bg-violet border border-yellow-50 rounded-3xl">
 								<li
@@ -106,15 +110,15 @@
 			<div
 				class="absolute bottom-0 left-0 w-screen h-screen pointer-events-none -z-10 opacity-40 overflow-hidden">
 				<img
-					src="/public/PICTURES/pokeball.png"
+					src="/PICTURES/pokeball.png"
 					alt="smallest pokeball"
 					class="absolute top-0 -left-10 w-28 h-28 rotate-45" />
 				<img
-					src="/public/PICTURES/pokeball.png"
+					src="/PICTURES/pokeball.png"
 					alt="small pokeball"
 					class="absolute bottom-4 right-8 w-48 h-48 -rotate-45" />
 				<img
-					src="/public/PICTURES/pokeball.png"
+					src="/PICTURES/pokeball.png"
 					alt="big pokeball"
 					class="absolute -bottom-60 -left-40 w-2/5 rotate-6" />
 			</div>

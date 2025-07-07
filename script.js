@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	let search = "";
 	const filters = { shiny: false, direction: "front" };
 
-	// DOM references
+	// DOM
 	const pokemonImage = document.querySelector("#pokemonImage");
 	const rotateBtn = document.querySelector("#rotate-btn");
 	const searchBtn = document.querySelector("#search-btn");
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const imageContainer = document.querySelector("#image-container");
 
 	// Functions
-	fetch("public/PICTURES/dice-svgrepo-com.svg")
+	fetch("/PICTURES/dice-svgrepo-com.svg")
 		.then((response) => response.text())
 		.then((svgText) => {
 			const container = document.getElementById("dice-icon");
@@ -67,7 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		nameHeader.textContent = pokemon.name.toUpperCase();
 		rotateBtn.classList.remove("invisible");
 		pokemonInfo.classList.remove("hidden");
-		/* pokemonContainer.classList.replace("bg-transparent", "bg-(--pink-light)"); */
 		pokemonContainer.classList.replace("bg-transparent", "bg-green");
 		pokemonContainer.classList.remove("border-none");
 		imageContainer.classList.replace("bg-transparent", "bg-image");
