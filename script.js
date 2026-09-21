@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-	const API_URL = "https://pokeapi.co/api/";
+	const API_URL = "https://pokeapi.co/api/v2/pokemon";
 	let pokemon = undefined;
 	let search = "";
 	const filters = { shiny: false, direction: "front" };
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const imageContainer = document.querySelector("#image-container");
 
 	// Functions
-	fetch("/PICTURES/dice-svgrepo-com.svg")
+	fetch("public/PICTURES/dice-svgrepo-com.svg")
 		.then((response) => response.text())
 		.then((svgText) => {
 			const container = document.getElementById("dice-icon");
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const fetchPokemon = async (input) => {
 		try {
 			const query = typeof input === "string" ? input.toLowerCase() : input;
-			const response = await fetch(`${API_URL}/v2/pokemon/${query}`);
+			const response = await fetch(`${API_URL}/${query}`);
 			if (!response.ok) throw new Error("Not found");
 			pokemon = await response.json();
 		} catch (err) {

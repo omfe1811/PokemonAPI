@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 :root {
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 	color-scheme: light dark;
@@ -10,7 +8,7 @@
 	--blue-darkest: rgb(0, 3, 52);
 	--pink-light: #ffcbdd;
 	--light-green: #b0ff92;
-	--pokeball: url("/public/PICTURES/pokeball.png");
+	--pokeball: url("../public/PICTURES/pokeball.png");
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -68,21 +66,21 @@ input {
 /* 								FONTS 					*/
 @font-face {
 	font-family: "Pokemon-hollow";
-	src: url("/FONTS/Pokemon-hollow.ttf") format("truetype");
+	 src: url("../public/FONTS/Pokemon-hollow.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face {
 	font-family: "Pokemon-solid";
-	src: url("/FONTS/Pokemon Solid.ttf") format("truetype");
+	 src: url("../public/FONTS/Pokemon Solid.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face {
 	font-family: "Pokemon-smaller";
-	src: url("/FONTS/Futura Condensed Extra Bold.otf") format("truetype");
+	 src: url("../public/FONTS/Futura Condensed Extra Bold.otf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
